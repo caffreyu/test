@@ -4,7 +4,7 @@ name: Download Release Files
 on:
   push:
     branches:
-      - main
+      - feat/compare-changes
 
 jobs:
   build:
