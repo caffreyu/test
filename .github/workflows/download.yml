@@ -45,10 +45,10 @@ jobs:
           ls -l
           cd $RANDOM_DIR
           echo "in random_dir"
-          ls -l
-          mv docs ../docs
-          cd ..
           tree
+          # mv docs ../docs
+          # cd ..
+          # tree
           # mv $RANDOM_DIR/docs ./docs
           # rm -rf $RANDOM_DIR
           # cat ./docs/date.txt
