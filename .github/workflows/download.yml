@@ -25,3 +25,25 @@ jobs:
           sudo apt-get update
           sudo apt-get install tree
           tree
+      
+      - name: Find the directory name
+        shell: bash
+        run: |
+          if [ -d random-* ]; then
+            echo "Found the downloaded directory"
+          else
+            echo "Failed to find the downloaded directory"
+            exit 1
+          fi
+          RANDOM_DIR=$(find . -type d -name "random*" | head -n 1)
+          echo "Found directory: $RANDOM_DIR"
+      
+      - name: Arrange files
+        shell: bash
+        run: |
+          mv $RANDOM_DIR/docs docs
+          rm -rf $RANDOM_DIR
+          cat docs/date.txt
+
+          
+          
