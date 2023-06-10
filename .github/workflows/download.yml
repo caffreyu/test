@@ -50,6 +50,3 @@ jobs:
           cat ./docs/date.txt
           echo "after processing"
           tree
-
-          
-          
