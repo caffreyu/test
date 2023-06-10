@@ -42,10 +42,10 @@ jobs:
         shell: bash
         run: |
           echo "top level"
-          ls -l
-          cd $RANDOM_DIR
-          echo "in random_dir"
           tree
+          # cd $RANDOM_DIR
+          # echo "in random_dir"
+          # tree
           # mv docs ../docs
           # cd ..
           # tree
