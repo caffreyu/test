@@ -50,3 +50,10 @@ jobs:
           cat ./docs/date.txt
           echo "after processing"
           tree
+      
+      - name: Create a new branch and compare differences
+        shell: bash
+        run: |
+          git checkout -b test
+          git add .
+          git diff test main
