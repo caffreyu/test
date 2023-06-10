@@ -43,15 +43,11 @@ jobs:
         run: |
           echo "top level"
           tree
-          # cd $RANDOM_DIR
-          # echo "in random_dir"
-          # tree
-          # mv docs ../docs
-          # cd ..
-          # tree
-          # mv $RANDOM_DIR/docs ./docs
-          # rm -rf $RANDOM_DIR
-          # cat ./docs/date.txt
+          mv ./random-0.0.1/docs ./docs
+          rm -rf $RANDOM_DIR
+          cat ./docs/date.txt
+          echo "after processing"
+          tree
 
           
           
