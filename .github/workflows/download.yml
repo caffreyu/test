@@ -41,9 +41,10 @@ jobs:
       - name: Arrange files
         shell: bash
         run: |
-          mv $RANDOM_DIR/docs ./docs
-          rm -rf $RANDOM_DIR
-          cat ./docs/date.txt
+          ls -l
+          # mv $RANDOM_DIR/docs ./docs
+          # rm -rf $RANDOM_DIR
+          # cat ./docs/date.txt
 
           
           
