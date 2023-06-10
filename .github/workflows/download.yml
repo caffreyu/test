@@ -18,6 +18,7 @@ jobs:
         run: |
           wget https://github.com/caffreyu/random/archive/refs/tags/v0.0.1.tar.gz -O download.tar.gz
           tar -xzf download.tar.gz
+          rm -rf download.tar.gz
       
       - name: List all the files
         shell: bash
@@ -43,8 +44,8 @@ jobs:
         run: |
           echo "top level"
           tree
-          mv ./random-0.0.1/docs ./docs
-          rm -rf $RANDOM_DIR
+          mv ./random-0.0.1/docs .
+          rm -rf ./random-0.0.1
           cat ./docs/date.txt
           echo "after processing"
           tree
