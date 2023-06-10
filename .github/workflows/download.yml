@@ -21,5 +21,5 @@ jobs:
           ref: v0.0.1
       
       - name: List all the files
-        runs: |
+        run: |
           echo ./*
