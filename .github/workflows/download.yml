@@ -22,4 +22,6 @@ jobs:
       - name: List all the files
         shell: bash
         run: |
-          echo ./*
+          sudo apt-get update
+          sudo apt-get install tree
+          tree
