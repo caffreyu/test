@@ -15,8 +15,7 @@ jobs:
         with:
           ref: "${{ github.event.client_payload.ref }}"
       
-      - name: Echo results
+      - name: Echo hello world
         run: |
-          echo ${{ github.event.client_payload.sha }}
-      
+          echo hello world
       
